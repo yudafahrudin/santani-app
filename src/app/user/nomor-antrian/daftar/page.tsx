@@ -56,7 +56,7 @@ const UserForm = () => {
         </div>
         <h2>DAFTAR NOMOR ANTRIAN</h2>
       </Stack>
-      <Grid justify="center" spacing={2} gap={2}>
+      <Grid spacing={2} gap={2}>
         <Grid item md={6}>
           <Formik
             initialValues={initialValues}
@@ -66,7 +66,7 @@ const UserForm = () => {
             {({ dirty, isValid, values, handleChange, handleBlur }) => {
               return (
                 <Form>
-                  <Grid item container spacing={1} justify="center" gap={2}>
+                  <Grid item container spacing={1} gap={2}>
                     <Grid item xs={12}>
                       <Field
                         label="Nama"
@@ -107,7 +107,7 @@ const UserForm = () => {
                     disabled={!dirty || !isValid}
                     variant="contained"
                     color="primary"
-                    type="Submit"
+                    type="submit"
                   >
                     SIMPAN NOMOR ANTRIAN
                   </Button>
