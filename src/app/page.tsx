@@ -78,7 +78,10 @@ const HomePage: React.FC = () => {
             borderRadius: 20,
           }}
         >
-          <a href="/404" style={{ textDecoration: "none", color: "black" }}>
+          <a
+            href="/user/buku-tamu"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             <Typography fontSize="2rem" variant="h3">
               BUKU TAMU
             </Typography>

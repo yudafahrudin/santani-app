@@ -3,19 +3,20 @@
 import React from "react";
 import {
   Grid,
+  CardContent,
   MenuItem,
   InputLabel,
   Select,
+  CardActions,
   Button,
   Container,
   FormControl,
   Stack,
 } from "@mui/material";
-
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import * as Yup from "yup";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "formik-material-ui";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 //Data
 const initialValues = {
@@ -54,7 +55,7 @@ const UserForm = () => {
             <ArrowBackIcon />
           </Button>
         </div>
-        <h2>DAFTAR NOMOR ANTRIAN</h2>
+        <h2>ISI BUKU TAMU</h2>
       </Stack>
       <Grid justify="center" spacing={2} gap={2}>
         <Grid item md={6}>
@@ -109,7 +110,7 @@ const UserForm = () => {
                     color="primary"
                     type="Submit"
                   >
-                    SIMPAN NOMOR ANTRIAN
+                    SIMPAN BUKU TAMU
                   </Button>
                 </Form>
               );

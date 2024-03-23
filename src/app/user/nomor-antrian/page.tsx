@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const QueueNumberPage: React.FC = () => {
   return (
