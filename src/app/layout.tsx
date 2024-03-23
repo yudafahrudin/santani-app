@@ -5,8 +5,7 @@ import { Quicksand } from "next/font/google";
 const inter = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SOM - Song Of Me",
-  description: "simple popular list of song and artist",
+  title: "SANTANI-APP",
 };
 
 interface Props {
