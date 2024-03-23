@@ -3,11 +3,9 @@
 import React from "react";
 import {
   Grid,
-  CardContent,
   MenuItem,
   InputLabel,
   Select,
-  CardActions,
   Button,
   Container,
   FormControl,
@@ -57,7 +55,7 @@ const UserForm = () => {
         </div>
         <h2>ISI BUKU TAMU</h2>
       </Stack>
-      <Grid justify="center" spacing={2} gap={2}>
+      <Grid spacing={2} gap={2}>
         <Grid item md={6}>
           <Formik
             initialValues={initialValues}
@@ -67,7 +65,7 @@ const UserForm = () => {
             {({ dirty, isValid, values, handleChange, handleBlur }) => {
               return (
                 <Form>
-                  <Grid item container spacing={1} justify="center" gap={2}>
+                  <Grid item container spacing={1} gap={2}>
                     <Grid item xs={12}>
                       <Field
                         label="Nama"
@@ -107,8 +105,8 @@ const UserForm = () => {
                     style={{ marginTop: 20 }}
                     disabled={!dirty || !isValid}
                     variant="contained"
+                    type="submit"
                     color="primary"
-                    type="Submit"
                   >
                     SIMPAN BUKU TAMU
                   </Button>
